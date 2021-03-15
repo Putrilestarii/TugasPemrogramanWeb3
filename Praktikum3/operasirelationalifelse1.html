@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contoh Program Javascript</title>
+	</head>
+	<!-- Bagian dari header untuk menampilkan judulnya -->
+	<script language ="javascript"> // Menggunkanan bahasa javascript
+		function test() {  // mendeklarasi objek variabel test 
+			val1=window.prompt("Nilai I :") // Menampilkan inputan Nilai yang pertama menggunakan prompt sebagai property window
+			val2=window.prompt("Nilai II :") // Menampilkan inputan nilai yang kedua menggunakan prompt sebagai property window
+			document.write("<br>"+"val1==val2"+"<br>")
+			document.write(val1==val2) // Menampilkan operator perbandingan apakah nilai 1 sama dengan nilai 2
+			document.write("<br>"+"val1!=val2"+"<br>")
+			document.write(val1!=val2) // Menampilkan perbandingan apakah nilai 1 tidak sama dengan nilai 2
+			document.write("<br>"+"val1&gtval2"+"<br>")
+			document.write(val1>val2) // Menampilkan perbandingan apakah nilai 1 lebih besar dari nilai 2
+			document.write("<br>"+"val1&ltval2"+"<br>")
+			document.write(val1<val2) // Menampilkan perbandingan apakah nilai 1 lebih kecil dari nilai 2
+		}
+	</script>
+	<body>
+		<input type="button" name="button1" value="relational" onclick=test()> <!-- Menampilkan button hasil dari Operasi perbandingan if else variabel test nilai1 dan nilai 2 drngan atribut onclick -->
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		 <title>Kalkulator</title>
+	</head>
+	<!-- bagian dari header yang berjudul Kalkulator-->
+		<script language="Javascript"> //bahasa dari script menggunakan javascript
+			function tambah() { //pendeklarasian objek tambah terhadap program
+			var val1=document.kirim.T1.value
+			var val2=document.kirim.T2.value
+			document.kirim.T3.value=(val1/1+val2/1)
+			}
+			function kurang() { //pendeklarasian objek kurang terhadap program
+			var val1=document.kirim.T1.value
+			var val2=document.kirim.T2.value
+			document.kirim.T3.value=(val1-val2)
+			}
+			function kali() { //pendeklarasian objek kali terhadap program
+			var val1=document.kirim.T1.value
+			var val2=document.kirim.T2.value
+			document.kirim.T3.value=(val1*val2)
+			}
+			function bagi() { //pendeklarasian objek bagi terhadap program
+			var val1=document.kirim.T1.value
+			var val2=document.kirim.T2.value
+			document.kirim.T3.value=(val1/val2)
+			}
+	</script>
+		<body>
+		<form method="POST" name="kirim">
+		<p>
+		Bilangan 1 <input type="text" name="T1" size="20"><br> <!-- menampilkan inputan kotak dialog Bilangan 1 -->
+
+		Bilangan 2 <input type="text" name="T2" size="20"><br> <!-- menampilkan inputan kotak dialog Bilangan 2 -->
+
+		Hasil <input type="text" name="T3" size="20"><br></p> <!-- menampilkan inputan kotak dialog Hasil -->
+
+		<p>
+		<input type="button" value="+" name="b1" onclick=tambah()> <!-- Menampilkan hasil dari button tambah dengan metode onclick -->
+		<input type="button" value="-" name="b2" onclick=kurang()> <!-- Menampilkan hasil dari button kurang dengan metode onclick -->
+		<input type="button" value="x" name="b3" onclick=kali()> <!-- Menampilkan hasil dari button kali dengan metode onclick -->
+		<input type="button" value="/" name="b4" onclick=bagi()> <!-- Menampilkan hasil dari button bagi dengan metode onclick -->
+		</p>
+		</form>
+	</body>
+</html>

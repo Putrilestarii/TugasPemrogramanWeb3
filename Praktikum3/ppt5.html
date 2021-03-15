@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Menggunakan bahasa inggris-->
+	<head>
+		<meta charset="utf-8"> <!-- Supaya mudah melakukan pencarian dalam browser-->
+		<title>Writing into an HTML Elemeny with Javascript</title>
+	</head>
+	<!-- Bagian dari header -->
+	<body>
+		<p id="greet"></p>
+		<p id="result"></p>
+
+		<script>
+			//writing text string inside an element
+			document.getElementById("greet").innerHTML ="Hello Gatot!";
+
+			//writing a variable value inside an element
+			var x = 50;
+			var y = 30;
+			var sum = x + y;
+			document.getElementById("result").innerHTML =sum;
+		</script>
+	</body>
+</html>
